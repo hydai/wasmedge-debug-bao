@@ -10,7 +10,7 @@ import (
 	bindgen "github.com/second-state/wasmedge-bindgen/host/go"
 )
 
-//go:embed target/wasm32-wasi/release/bao.wasm
+//go:embed target/wasm32-wasip1/release/bao.wasm
 var wasm []byte
 
 var conf *wasmedge.Configure
