@@ -36,6 +36,7 @@ jobs:
           cargo build --release --target wasm32-wasip1
       - name: test
         run: |
+          source ~/.wasmedge/env
           go mod download github.com/second-state/wasmedge-bindgen
           go mod download github.com/second-state/WasmEdge-go
           go run main.go
